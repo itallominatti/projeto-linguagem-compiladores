@@ -27,6 +27,86 @@ public interface DataLangListener extends ParseTreeListener {
 	 */
 	void exitStatement(DataLangParser.StatementContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link DataLangParser#ternaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterTernaryExpression(DataLangParser.TernaryExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#ternaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitTernaryExpression(DataLangParser.TernaryExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#conditionalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterConditionalExpression(DataLangParser.ConditionalExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#conditionalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitConditionalExpression(DataLangParser.ConditionalExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#printStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrintStatement(DataLangParser.PrintStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#printStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrintStatement(DataLangParser.PrintStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterIfStatement(DataLangParser.IfStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#ifStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitIfStatement(DataLangParser.IfStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#forLoop}.
+	 * @param ctx the parse tree
+	 */
+	void enterForLoop(DataLangParser.ForLoopContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#forLoop}.
+	 * @param ctx the parse tree
+	 */
+	void exitForLoop(DataLangParser.ForLoopContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#initialization}.
+	 * @param ctx the parse tree
+	 */
+	void enterInitialization(DataLangParser.InitializationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#initialization}.
+	 * @param ctx the parse tree
+	 */
+	void exitInitialization(DataLangParser.InitializationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#condition}.
+	 * @param ctx the parse tree
+	 */
+	void enterCondition(DataLangParser.ConditionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#condition}.
+	 * @param ctx the parse tree
+	 */
+	void exitCondition(DataLangParser.ConditionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#update}.
+	 * @param ctx the parse tree
+	 */
+	void enterUpdate(DataLangParser.UpdateContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#update}.
+	 * @param ctx the parse tree
+	 */
+	void exitUpdate(DataLangParser.UpdateContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link DataLangParser#variableDeclaration}.
 	 * @param ctx the parse tree
 	 */
@@ -106,6 +186,36 @@ public interface DataLangListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExpression(DataLangParser.ExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#addExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAddExpression(DataLangParser.AddExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#addExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAddExpression(DataLangParser.AddExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#multExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMultExpression(DataLangParser.MultExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#multExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMultExpression(DataLangParser.MultExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link DataLangParser#atom}.
+	 * @param ctx the parse tree
+	 */
+	void enterAtom(DataLangParser.AtomContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DataLangParser#atom}.
+	 * @param ctx the parse tree
+	 */
+	void exitAtom(DataLangParser.AtomContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link DataLangParser#scalarType}.
 	 * @param ctx the parse tree
