@@ -1,0 +1,41 @@
+vector myNumbers: int =  [10, 20, 30, 40, 50];
+vector words: str =  ["hello", "world", "this", "is", "a", "vector"];
+vector boolValues: boolean =  [true, false, true, true];
+-----------------------------------------------------------------------
+stack myStack = new stack;
+myStack.push(10);
+myStack.push(20);
+myStack.push(30);
+myStack.pop();
+----------------------------
+int x = 10;
+int y = 12;
+
+if (x == 10) {
+    print("está correto");
+} else {
+    print("errado");
+}
+
+--------------------------------------------
+
+matrix myMatrix: int = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+matrix stringMatrix: str = [
+    ["Apple", "Banana", "Orange"],
+    ["Lemon", "Grapes", "Melon"]
+];
+
+matrix boolMatrix: boolean = [
+    [true, false],
+    [false, true]
+];
+
+matrix floatMatrix: float = [
+    [1.5, 2.7],
+    [3.9, 4.2]
+];
